@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-// Check if the input string is a valid number
 bool isValidNumber(const string &str)
 {
     if (str.empty())
@@ -13,8 +12,6 @@ bool isValidNumber(const string &str)
     }
     return true;
 }
-
-// Get valid integer input from the user
 int getValidInteger()
 {
     string input;
@@ -22,11 +19,10 @@ int getValidInteger()
     {
         cin >> input;
         if (isValidNumber(input))
-        {
+{
             return stoi(input);
         }
-        else
-        {
+        else{
             cout << "Invalid input. Please enter a valid integer: ";
         }
     }

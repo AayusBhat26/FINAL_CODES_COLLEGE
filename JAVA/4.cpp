@@ -1,4 +1,3 @@
-// Write a Program to implement Multilevel Inheritance using C++.
 #include <iostream>
 using namespace std;
 class Person {
@@ -18,7 +17,6 @@ class Student : public Person {
 protected:
     string rollNumber;
 public:
-    // Constructor for Student
     Student(string name, int age, string rollNumber) : Person(name, age) {
         this->rollNumber = rollNumber;
     }
