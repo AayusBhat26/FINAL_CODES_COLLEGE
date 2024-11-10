@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 // Check if the input string is a valid number
 bool isValidNumber(const string &str)
 {

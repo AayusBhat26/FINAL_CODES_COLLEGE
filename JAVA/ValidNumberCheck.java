@@ -21,10 +21,9 @@ public class ValidNumberCheck {
     }
 
     public static void main(String[] args) {
-        // Define the string array
+        System.out.println("\n\n\n");
         String[] arr = {"100", "10.2", "5.hello", "100hello"};
-        
-        // Call the method to check each string
         checkValidNumber(arr);
+        System.out.println("\n\n\n");
     }
 }

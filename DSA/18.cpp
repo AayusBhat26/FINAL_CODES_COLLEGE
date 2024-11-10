@@ -93,12 +93,12 @@ int longestSubSeq(string first, string second, string& subsequence){
 
 int main(){
     string first, second, subsequence; 
-    cout << "Enter the first string: ";
+    cout << "\n\nEnter the first string: ";
     cin >> first;
-    cout << "\nEnter the second string: ";
+    cout << "\n\nEnter the second string: ";
     cin >> second;
     int lengthOfLCS = longestSubSeq(first, second, subsequence);
-    cout << "Length of longest common subsequence: " << lengthOfLCS << endl;
-    cout << "Longest common subsequence: " << subsequence << endl;
+    cout << "\n\nLength of longest common subsequence: " << lengthOfLCS << endl;
+    cout << "\n\nLongest common subsequence: " << subsequence << endl<<endl<<endl;
     return 0;
 }

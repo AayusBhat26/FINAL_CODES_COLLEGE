@@ -27,18 +27,6 @@ int peekStack() {
     if (isStackEmpty()) return 0; 
     return top->data;
 }
-void displayStack() {
-    Node* temp = top;
-    if(temp == nullptr){
-        cout<<"\nStack is empty\n";
-        return;
-    }
-    while (temp) {
-        cout << temp->data << " ";
-        temp = temp->next;
-    }
-    cout << endl;
-}
 // Queue 
 Node* front = nullptr;
 Node* rear = nullptr;
@@ -73,18 +61,7 @@ int peekQueue() {
     }
     return front->data;
 }
-void displayQueue() {
-    Node* temp = front;
-    if(temp == nullptr){
-        cout<<"\nQueue is empty\n";
-        return; 
-    }
-    while (temp) {
-        cout << temp->data << " ";
-        temp = temp->next;
-    }
-    cout << endl;
-}
+
 void displayMenu() {
     cout << "Menu:" << endl;
     cout << "1. Stack Operations" << endl;
@@ -99,8 +76,8 @@ void stackMenu() {
         cout << "1. Push" << endl;
         cout << "2. Pop" << endl;
         cout << "3. Peek" << endl;
-        cout << "4. Display" << endl;
-        cout << "5. Back to Main Menu" << endl;
+        // cout << "4. Display" << endl;
+        cout << "4. Back to Main Menu" << endl;
         cout << "Choose an option: ";
         cin >> choice;
         switch (choice) {
@@ -126,15 +103,11 @@ void stackMenu() {
                 }
                 break;
             case 4:
-                cout << "Stack elements: ";
-                displayStack();
-                break;
-            case 5:
                 break;
             default:
                 cout << "Invalid choice!" << endl;
         }
-    } while (choice != 5);
+    } while (choice != 4);
 }
 void queueMenu() {
     int choice, data;
@@ -143,8 +116,8 @@ void queueMenu() {
         cout << "1. Enqueue" << endl;
         cout << "2. Dequeue" << endl;
         cout << "3. Peek" << endl;
-        cout << "4. Display" << endl;
-        cout << "5. Back to Main Menu" << endl;
+        // cout << "4. Display" << endl;
+        cout << "4. Back to Main Menu" << endl;
         cout << "Choose an option: ";
         cin >> choice;
         switch (choice) {
@@ -170,15 +143,11 @@ void queueMenu() {
                 }
                 break;
             case 4:
-                cout << "Queue elements: ";
-                displayQueue();
-                break;
-            case 5:
                 break;
             default:
                 cout << "Invalid choice!" << endl;
         }
-    } while (choice != 5);
+    } while (choice != 4);
 }
 
 int main() {

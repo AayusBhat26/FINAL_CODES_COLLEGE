@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#define maxNodes 8
+#define maxNodes 5
 
 void initializeGraph(int matrix[maxNodes][maxNodes], int vertexValues[maxNodes]) {
     // Set all values in the adjacency matrix to 0
